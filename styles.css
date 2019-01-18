@@ -1,0 +1,43 @@
+/*first some universal styling things for convenience */
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+img, embed, object, video {
+    max-width: 100%;
+}
+body{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  margin: unset;
+  justify-content:center;
+}
+.content{
+  width: 100%;
+}
+p {
+  padding: 2%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: calc(14pt + 1vw);
+  }
+/*then some specific stuff - defaults for mobile window size */
+body{
+    background-image: url("assets/wood_background.jpg");
+}
+
+#lasertrap {
+    width: 80vw;
+    height: calc(80vw*3/4);
+    margin-left: 10vw;
+    margin-right:10vw;
+}
